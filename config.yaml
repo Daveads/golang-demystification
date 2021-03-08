@@ -180,4 +180,4 @@ services:
     twitter:
         disableInlineCSS: true
 
-# publishDir: "docs"    
+publishDir: "public"    
