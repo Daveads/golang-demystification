@@ -9,6 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+publishDir = "docs"
 # googleAnalytics: UA-123-45
 
 minify:
@@ -178,3 +179,5 @@ services:
         disableInlineCSS: true
     twitter:
         disableInlineCSS: true
+
+    
