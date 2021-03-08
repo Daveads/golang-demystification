@@ -1,4 +1,4 @@
-baseURL: "https://daveads.github.io/golang-demystification/"
+baseURL: "/"
 title: golang-demstification
 paginate: 5
 theme: papermod
@@ -180,4 +180,4 @@ services:
     twitter:
         disableInlineCSS: true
 
-publishDir: "docs"    
+# publishDir: "docs"    
