@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://daveads.github.io/golang-demystification/sitemap.xml

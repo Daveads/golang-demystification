@@ -1,4 +1,4 @@
-baseURL: "https://adityatelange.github.io/hugo-PaperMod/"
+baseURL: "https://daveads.github.io/golang-demystification/"
 title: golang-demstification
 paginate: 5
 theme: papermod
