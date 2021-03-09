@@ -1,5 +1,4 @@
-name: Build and Deploy
-
+name: Push to GitHub Pages on push to master
 on:
   push:
     branches:
@@ -7,19 +6,18 @@ on:
 
 jobs:
   build:
-
+    name: Deploy
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout main
-      uses: actions/checkout@v2
-      with:
-        submodules: true
+      - name: Checkout gh-page
+        uses: actions/checkout@v1
 
-    - name: Hugo Deploy GitHub Pages
-      uses: benmatselby/hugo-deploy-gh-pages@master
-      env:
-        HUGO_VERSION: 0.80.0
-        TARGET_REPO: Daveads/golang-demystification
-        TOKEN: ${{ secrets.godemystification }}
-        CNAME: 
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          HUGO_VERSION: 0.80.1
+          TARGET_REPO: Daveads/golang-demystification
+          TARGET_BRANCH: gh-page
+          TOKEN: ${{ secrets.godemystification }}
+          HUGO_ARGS: '-t academic'
+          CNAME: benmatselby.github.io
