@@ -1,4 +1,4 @@
-baseURL: "http://example.org/"
+baseURL: "/"
 title: golang-demstification
 paginate: 5
 theme: papermod
