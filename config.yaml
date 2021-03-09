@@ -1,4 +1,4 @@
-baseURL: "/"
+baseURL: "https://golangdemstification.netlify.app/"
 title: golang-demstification
 paginate: 5
 theme: papermod
